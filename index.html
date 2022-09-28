@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="M-logo.jpg" class="logo" id="logo">
+			<nav class="nav" >
+				<ul id="menulist">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="header.php">Programing</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+			<i class="fa fa-bars" id="menu" class="menubar" onclick="togglemenu()"></i>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col_1">
+			<h2>HTML CSS <br> Designing page.</h2>
+			<h3>This is the model page..</h3>
+			<p>(Compatibl/Generator)</p>
+			<h4>Since 2022</h4>
+		</div>
+		<div class="col_2">
+			<div class="color"></div>	
+		</div>
+	</div>
+
+
+	<script>
+		var menulist = document.getElementById('menulist');
+
+		menulist.style.maxHeight = "0px";
+
+		function togglemenu() {
+			if (menulist.style.maxHeight == "0px") {
+				menulist.style.maxHeight = "140px";
+			} else {
+				menulist.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>
